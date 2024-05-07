@@ -17,31 +17,34 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp B  &kp L  &kp D      &kp G      &kp Q       &kp J    &kp F      &kp O      &kp U    &kp COMMA  &kp BSLH
-&kp TAB    &kp N  &kp R  &kp T      &kp S      &kp V       &kp K    &kp H      &kp A      &kp E    &kp I      &kp SQT
-&kp LSHFT  &kp X  &kp M  &kp C      &kp W      &kp Z       &kp P    &kp Y      &kp COMMA  &kp SQT  &kp FSLH   &kp DOT
-                         &kp LSHFT  &kp SPACE  &kp BSPC    &kp DEL  &kp RET    &kp RGUI
-                                    &kp LALT   &mo 1       &mo 2    &kp RCTRL
+&kp ESC    &kp B  &kp L  &kp D      &kp G      &kp Q           &kp J    &kp F      &kp O      &kp U    &kp COMMA  &kp BSLH
+&kp TAB    &kp N  &kp R  &kp T      &kp S      &kp V           &kp K    &kp H      &kp A      &kp E    &kp I      &kp SEMI
+&kp LSHFT  &kp X  &kp M  &kp C      &kp W      &kp Z           &kp P    &kp Y      &kp SQT    &kp FSLH &kp DOT    &kp RSHFT
+
+                         &kp BSPC   &kp SPACE  &kp LMETA       &kp DEL  &kp RET    &kp RMETA
+                                    &kp LALT   &mo 1           &mo 2    &kp RCTRL
             >;
         };
 
         layer_1 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mkp LCLK  &mkp RCLK  &kp N7     &kp N8  &kp N9  &kp BSPC
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &trans     &kp FSLH   &kp N4     &kp N5  &kp N6  &kp MINUS
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &trans     &kp TAB    &kp N1     &kp N2  &kp N3  &kp PLUS
-                                        &bootloader   &trans        &trans          &kp N0     &kp DOT    &kp ENTER
-                                                      &trans        &trans          &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &mkp LCLK  &mkp RCLK  &kp N7     &kp N8  &kp N9  &kp BSPC
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6             &trans     &kp FSLH   &kp N4     &kp N5  &kp N6  &kp MINUS
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12            &trans     &kp TAB    &kp N1     &kp N2  &kp N3  &kp PLUS
+
+                                        &bootloader   &trans        &trans             &kp N0     &kp DOT    &kp ENTER
+                                                      &trans        &trans             &trans     &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN     &kp RIGHT  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans    &bootloader
-                                &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &kp UP       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp UP       &kp DOWN   &kp RIGHT  &trans
+
+                        &trans  &trans  &trans      &trans  &trans    &bootloader
+                                &trans  &trans      &trans  &trans
             >;
         };
     };
